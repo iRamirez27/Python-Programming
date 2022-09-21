@@ -1,7 +1,7 @@
 #Programmer: Izzy Ramirez
-#Program: Loops
+#Program: Odd Number
 #First created: 9/19/22 8:22:00 CST
-#Last changed: 9/19/22 8:43:00 CST
+#Last changed: 9/21/22 8:07:00 CST
 #Version: Python 3.10.6
 
 print("Odd numbers from the first natural hundred numbers")
