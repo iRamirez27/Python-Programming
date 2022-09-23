@@ -15,9 +15,16 @@ for i in range(0, 101):
 #         print("\n")
 #     print(((2*k)-1), end=" ")
 
+# print("Printing odd numbers from first hundred natural numbers using a while loop")
+# i = 1
+# while i < 100:
+#     if (i % 2) != 0:
+#         print(i, end=" ")
+#     i = i + 1
+#
 print("Printing odd numbers from first hundred natural numbers using a while loop")
-i = 1
-while i < 100:
+i = 100
+while i > 1:
     if (i % 2) != 0:
         print(i, end=" ")
-    i = i + 1
+    i = i - 1
