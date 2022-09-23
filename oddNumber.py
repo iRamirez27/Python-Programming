@@ -22,7 +22,7 @@ for i in range(0, 101):
 #         print(i, end=" ")
 #     i = i + 1
 #
-print("Printing odd numbers from first hundred natural numbers using a while loop")
+print("Printing odd numbers from first hundred natural numbers using a while loop but in reverse")
 i = 100
 while i > 1:
     if (i % 2) != 0:
