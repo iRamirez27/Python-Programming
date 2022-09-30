@@ -2,7 +2,7 @@
 Programmer: Izzy Ramirez
 Program: Numbers Type
 First Created: 9/26/22 8:03:00 CST
-Last Edited: 9/30/22 8:50:00 CST
+Last Edited: 9/30/22 10:08:00 CST
 Version: 1.0.0
 
 """
@@ -75,5 +75,17 @@ elif choice == 4:
 elif choice == 5:
     def palindrome_numbers():
         print("\nPalindrome numbers from the first hundred natural numbers")
+        # reverse = 0
+        #number = 121
+        for number in range(1, 101):
+            originalNumber = number
+            reverse = 0
+            while number > 0:
+                remainder = int(number % 10)
+                reverse = int(reverse * 10 + remainder)
+                number = int(number / 10)
+                # print(reverse)
+            if originalNumber == reverse:
+                print(originalNumber, end=" ")
 
     palindrome_numbers()
