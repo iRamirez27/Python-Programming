@@ -2,7 +2,7 @@
 Programmer: Izzy Ramirez
 Program: Numbers Type
 First Created: 9/26/22 8:03:00 CST
-Last Edited: 9/30/22 10:08:00 CST
+Last Edited: 10/5/22 8:27:00 CST
 Version: 1.0.0
 
 """
@@ -16,29 +16,22 @@ choice = int(input("\nSelect desired operation by entering a number: "))
 
 
 # odd numbers
-# if choice == 1:
 def odd_numbers():
     print("\nOdd numbers from the first hundred natural numbers")
     for i in range(0, 100):
         if (i % 2) != 0:
             print(i, end=" ")
 
-    # odd_numbers()
-
 
 # even numbers
-# elif choice == 2:
 def even_numbers():
     print("\nEven numbers from the first hundred natural numbers")
     for i in range(0, 100):
         if (i % 2) == 0:
             print(i, end=" ")
 
-    # even_numbers()
-
 
 # prime numbers
-# elif choice == 3:
 def prime_numbers():
     print("\nPrime numbers from the first hundred natural numbers")
     counter = 0         # initializing counter variable to 0
@@ -51,11 +44,8 @@ def prime_numbers():
             print(n, end=" ")       # printing if number is prime
         counter = 0
 
-    # prime_numbers()
-
 
 # perfect numbers
-# elif choice == 4:
 def perfect_numbers():
     print("\nPerfect numbers from the first hundred natural numbers")
     sum = 0
@@ -69,11 +59,8 @@ def perfect_numbers():
             print(n, end=" ")
         sum = 0
 
-    # perfect_numbers()
-
 
 # palindrome numbers
-# elif choice == 5:
 def palindrome_numbers():
     print("\nPalindrome numbers from the first hundred natural numbers")
     # reverse = 0
@@ -89,11 +76,6 @@ def palindrome_numbers():
         if originalNumber == reverse:
             print(originalNumber, end=" ")
 
-    # palindrome_numbers()
-
-# else:
-# print("Enter a valid number.")
-
 
 match choice:
     case 1:
@@ -106,4 +88,3 @@ match choice:
         perfect_numbers()
     case 5:
         palindrome_numbers()
-
