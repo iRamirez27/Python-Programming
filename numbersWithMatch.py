@@ -63,8 +63,6 @@ def perfect_numbers():
 # palindrome numbers
 def palindrome_numbers():
     print("\nPalindrome numbers from the first hundred natural numbers")
-    # reverse = 0
-    #number = 121
     for number in range(1, 101):
         originalNumber = number
         reverse = 0
@@ -72,7 +70,6 @@ def palindrome_numbers():
             remainder = int(number % 10)
             reverse = int(reverse * 10 + remainder)
             number = int(number / 10)
-            # print(reverse)
         if originalNumber == reverse:
             print(originalNumber, end=" ")
 
